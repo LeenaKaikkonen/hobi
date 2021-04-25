@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      H O B I
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" >H O B I</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container  name="HOBI page" >
+  </app-explore-container>
+  <div class="fullheight xc">
+    <div class="vcs">
+
+
+ <h2>Welcome to HOBI</h2>
+ <p></p>
+ <p>Login:</p>
+ <ion-input [(ngModel)]="enteredemail" style ="background-color: aquamarine;" required email type="text"
+ placeholder="eMail" #email="ngModel"></ion-input><br>
+ <ion-input [(ngModel)]="enteredpassword" style = "background-color: bisque;" minlength="8" required placeholder="Password"  type="password" #password="ngModel"></ion-input>
+
+ <br><br>
+ <ion-button expand="full" color="secondary" (click)="login()" [disabled]="email.invalid || password.invalid"
+ >Login</ion-button>
+
+<p>Not a member yet? When you login the first time, we will send you a confirmation eMail</p>
+<p></p>
+</div></div>
+</ion-content>
+

@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      H O B I
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">H O B I</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="HOBI"></app-explore-container>
+  <div class="fullheight xc">
+    <div class="vcs">
+
+  <P>Welcome to HOBI</P>
+  <p></p>
+
+  <p>Selects your interests:</p>
+ <ion-grid>
+  <ion-row>
+    <ion-col>     
+        <ion-checkbox [(ngModel)]="nature" color="secondary"></ion-checkbox>
+    <ion-label> Nature</ion-label>  
+    </ion-col>
+    <ion-col>
+    <ion-checkbox [(ngModel)]="art" color="secondary"></ion-checkbox>
+    <ion-label> Art</ion-label> 
+</ion-col></ion-row>
+<ion-row>
+<ion-col>
+  <ion-checkbox [(ngModel)]="music" color="secondary"></ion-checkbox>
+  <ion-label> Music</ion-label> 
+</ion-col>
+<ion-col>
+  <ion-checkbox [(ngModel)]="winter" color="secondary"></ion-checkbox>
+  <ion-label> Winter sports</ion-label> 
+</ion-col>
+</ion-row>
+<ion-row>
+<ion-col>
+  <ion-checkbox [(ngModel)]="sports" color="secondary"></ion-checkbox>
+  <ion-label> Sports</ion-label> 
+</ion-col>
+<ion-col>
+  <ion-checkbox [(ngModel)]="water" color="secondary"></ion-checkbox>
+  <ion-label> Water</ion-label> 
+</ion-col>
+</ion-row>
+<ion-row>
+<ion-col>
+  <ion-checkbox [(ngModel)]="group" color="secondary"></ion-checkbox>
+  <ion-label> Group sports</ion-label> 
+</ion-col>
+<ion-col>
+  <ion-checkbox [(ngModel)]="individual" color="secondary"></ion-checkbox>
+  <ion-label> Individual sports</ion-label> 
+</ion-col>
+</ion-row>
+ </ion-grid>
+ <p></p>
+ <ion-button expand="full" color="secondary" (click)="proceed()" >Proceed</ion-button>
+</div></div>
+</ion-content>
